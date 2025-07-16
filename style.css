@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7fb;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px #0001;
+    padding: 30px 25px 40px 25px;
+    text-align: center;
+    min-height: 380px;
+    position: relative;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 2.2em;
+}
+.emoji { font-size: 1.1em; }
+.box { margin-bottom: 30px; }
+.card {
+    background: #fafafc;
+    border-radius: 8px;
+    box-shadow: 0 1px 7px #0002;
+    text-align: left;
+    display: inline-block;
+    padding: 18px 25px;
+    margin-top: 12px;
+    min-width: 270px;
+    min-height: 120px;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.card.hide {
+    opacity: 0;
+    transform: scale(0.97);
+}
+.card.show {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px #9a7fff2f;
+}
+
+.big-btn {
+    background: #5633d5;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 36px;
+    font-size: 1.11em;
+    cursor: pointer;
+    box-shadow: 0 1px 6px #0001;
+    transition: background 0.18s, box-shadow 0.25s;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 12px;
+}
+.big-btn:hover {
+    background: #4227a6;
+    box-shadow: 0 3px 18px #aaa3;
+}
+
+.fade-in {
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to   { opacity: 1; transform: none;}
+}
